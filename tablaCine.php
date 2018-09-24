@@ -1,10 +1,10 @@
 <?php
                             $cine = getCines();
-                            
+
                             echo ‘<table>’;
-                            
-                                foreach($cines as $cine): 
-                                   if(es_mamifero($cine)) {
+
+                                foreach($cines as $cine):
+                                  {
                              ?>
                                  <tr>
                                    <td> <?=$cine['nombre']?></td>
@@ -12,6 +12,6 @@
                                    <td> <?=$cine['salas']?></td>
                             </tr>
 <?php }
- endforeach; 
+ endforeach;
 echo ‘</table>’;
- ?>    
+ ?>
